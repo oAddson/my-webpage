@@ -27,6 +27,13 @@ body {
     width: 400px;
     border-radius: 50%;
     border: 5px solid #3BBEF3;
+    box-shadow: 22px 22px 33px #202020,
+    -22px -22px 33px #464646;
+    transition: 1s ease-in-out border-color;
+}
+
+.profile:hover {
+    border-color: #2FF9C5;
 }
 
 .name {
@@ -72,9 +79,16 @@ body {
     padding-bottom: 3px;
     margin-left: 10px;
     transition: .2s ease color, .2s ease border-color;
+    white-space: nowrap;
 }
 
 .contact_link:hover {
     color: #3bbef3;
     border-color: #3BBEF3;
+}
+
+::selection {
+    background-color: #3BBEF3;
+    color: #FFFFFF;
+    opacity: 1;
 }
